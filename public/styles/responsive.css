@@ -1,0 +1,32 @@
+
+@media (max-width: 900px) {
+    #pagehome {
+        background-position-x: 110vw;
+        align-items: center;
+    }
+    .content {
+        align-items: center;
+        text-align: center;
+    }
+    header #login {
+        position: absolute;
+        bottom: 48px;
+        transform: translateX(-50%);
+        left:50%;
+    }
+    #search main .cards {
+        grid-template-columns: 1fr; 
+ 
+    }
+}
+
+@media(min-width:1200px) {
+    #pagehome {
+    background-position-x: 30vw;
+    }
+}
+@media (max-height:609px) {
+    #page-home {
+        background-position-y: 50px;
+    }
+}

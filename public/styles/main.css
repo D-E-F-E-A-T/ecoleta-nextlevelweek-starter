@@ -1,0 +1,33 @@
+:root {
+    --text-color:#2F4F4F;
+    --background-color: #CAE1FF;
+}
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+body{
+    background-color: var(--background-color);
+    font-family: 'Manrope', sans-serif;
+    color: var(--text-color);
+    font-size: 15px;
+}
+h1 {
+    color: var(--text-color)
+    font-size:33px;
+    line-height: 40px;
+    text-align: center;
+    font-family: 'Francois One', sans-serif;
+}
+
+a {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    color: #191970;
+}
+#ecoleta {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 25px;
+    color: #191970;
+}

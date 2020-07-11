@@ -1,0 +1,16 @@
+{
+  "name": "cod",
+  "dependencies": {
+    "express": "^4.17.1",
+    "netlify-lambda": "^1.6.3",
+    "nodemon": "^2.0.4",
+    "nunjucks": "^3.2.1",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "mareaceae",
+  "license": "ISC"
+}

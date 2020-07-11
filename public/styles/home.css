@@ -1,0 +1,92 @@
+#pagehome {
+    background: #CAE1FF url('../img/home-background.svg') no-repeat;
+    background-position: 35vw 10vh;
+}
+.content{
+    max-width: 1100px;
+    width: 95%;
+    margin: 0px auto; /*coloca margem só nas laterais = 0 auto*/
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header{
+    display: flex; /*"desbloqueia" os conteúdos para mexer na posição*/
+    align-items: center; /*alinha eles no centro da linha*/
+    justify-content: space-between; /*acrescenta espaço entre eles*/
+    font-family: 'Manrope', sans-serif;
+    color: #191970;
+    margin-top: 25px;
+}
+#ecoleta {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 24px;
+}
+#logo, #login {
+    display: inline-flex;
+    align-items: center;
+    justify-content: left;
+}
+#logo img, #login img {
+    max-width: 35px;
+    max-height: 35px;
+    margin: 0 10px 0 10px;
+}
+main {
+    margin-top: 10px;
+    max-width: 450px;
+    max-height: 500px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    color: var(--text-color);
+    font-size: 15px;
+}
+#pagehome .content main p {
+    margin-top: 25px;
+    line-height: 28px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+main a {
+    margin-top: 20px;
+    max-width: 360px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #191970;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    transition: 400ms;
+}
+main a:hover {
+    background-color: #191970a9;
+}
+#procurar {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    transition: 400ms;
+    background-color: #212199a9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#procurar::after{ 
+   content:"";
+   width: 20px;
+   height: 20px;
+   background: url('../img/search.svg');
+}
+strong {
+    flex:1;
+    text-align: center;
+
+}

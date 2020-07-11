@@ -1,0 +1,46 @@
+{% extends "partials/layout.html" %}
+{% block styles %}
+    <link rel="stylesheet" href="styles/search.css">
+{%endblock styles%}
+{% block title %}
+    <title>Resultados</title>
+{% endblock title %}
+{% block header %}
+    <header>
+        <span id="logo">
+            <img src='/img/oie_transparent - Copia.png'>
+            <h3 id="ecoleta">Ecoleta</h3>
+        </span>
+        <span id="login">
+            <img src="/img/arrow-left.svg" width="17px" alt="log in">
+            <a href="/">Voltar para home</a>
+        </span>
+    </header>
+{% endblock header %}
+{%block content%}
+    <div id="search">
+        <main>
+            {% if total > 0 %}
+            <h4>
+                <strong>{{ total }}</strong>
+                encontrados</h4>
+            {%else%}
+                <h4><strong>Nenhum</strong> local cadastrado</h4>
+            {% endif %}
+            <div class="cards">
+                {% for place in places %}
+                    <div class="card1">
+                        <img src="{{ place.image }}" alt="{{ place.name }}">
+                        <h1>{{ place.name }}</h1>
+                        <h3>{{ place.items }}</h3>
+                        <p>{{ place.address }} 
+                            {{ place.address2 }}<br/>
+                            {{ place.city }}, {{ place.state }}<br/>
+                            Contato: {{ places.email }}
+                        </p>
+                    </div>
+                {% endfor %}
+            </div>
+        </main>
+    </div>
+{%endblock content%}
