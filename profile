@@ -1,0 +1,1 @@
+web: nodemon server.js -D server.port=$PORT
